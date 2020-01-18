@@ -1,6 +1,6 @@
 #!/usr/bin/env node 
 
-var app = require('../index');
+var app = require('../src/index.ts');
 var http = require('http');
 
 const port = process.env.PORT || 3000;
