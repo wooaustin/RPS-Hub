@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Login</h1>
+    <div class='login_box_container'>
+        <div class="login_box">
+            <form action='loginHandler.ts' onsubmit='echo_cred(user,pass)'>
+                Username:<br>
+                <input type='text' name='user' value=''>
+                <br> Password:
+                <br>
+                <input type='password' name='pass' value=''>
+                <br><br>
+                <input type='submit' value='Submit'>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type='text/javascript'>
+    function echo_cred(user, pass) {
+        alert('Username is ' + user.value + '\nPassword is ' + pass.value);
+    }
+</script>
+<style>
+    h1 {
+        text-align: center;
+    }
+    
+    .login_box_container {
+        text-align: center;
+    }
+    
+    .login_box {
+        border: solid;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+    }
+</style>
